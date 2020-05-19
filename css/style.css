@@ -1,0 +1,84 @@
+h3 {
+  text-align: center;
+  font-family:Verdana, sans-serif;
+  font-weight: 300;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 150px;
+  padding-left: 150px;
+}
+.center {
+  text-align: center;
+}
+.sticky-element {
+ position: sticky;
+ top: 0;
+ left: 0;
+ color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.col {
+  height: 25px;
+  background-color: pink;
+  flex-grow: 1;
+  margin: 15px;
+  width:calc(5%);
+}
+
+/*鼠標變可以點*/
+.myMOUSE{ 
+  cursor: pointer; 
+}
+/*移動上去就變彩色*/
+.grid-item {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.grid-item:hover{
+  -webkit-filter: none;
+  filter: none;
+}
+/*移動上去放大*/
+.biggerimg{
+  width: 400px;
+  height: 400px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+.biggerimg img{
+  width: 100%;
+  transform:scale(1,1);
+  transition: all 0.4s ease-out;
+}
+.biggerimg img:hover{
+  transform:scale(1.1,1.1);
+}
+
+/*移動上去變文字*/
+div#line1 span#a {
+  display: inline;
+  font-size:2.5vmin;
+  font-family:Microsoft JhengHei;
+}
+
+div#line1:hover span#a {
+  display: none;
+}
+
+div#line1 span#b {
+  display: none;
+}
+
+div#line1:hover span#b {
+  display: inline;
+  font-size:2.7vmin;
+  font-family:Arial, sans-serif;
+  font-weight: 150;
+}
